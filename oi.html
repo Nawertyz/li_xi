@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LÌ XÌ TẾT</title>    
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('images/bé\ thích\ \(5\).jpg');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100%;
+        }
+
+        .container {
+            position: fixed;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.122);
+            padding: 2px;
+            border-radius: 10px;
+            max-width: 400px;   
+        }
+        h1 {
+            text-align: center;
+            color: #202020;
+        }
+        form {
+            text-align: center;
+        }
+        
+        label {
+            margin-bottom: 5px; /* Đặt khoảng cách dưới cho nhãn */
+        }
+        
+        input {
+            margin-top: 10px; /* Đặt khoảng cách trên cho ô nhập liệu */
+            margin-bottom: 10px; /* Đặt khoảng cách dưới cho ô nhập liệu */
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>LÌ XÌ TẾT </h1>
+        <form id="choice-form">
+            <label for="choice">Em bé có muốn tham gia chương trình chọn lì xì may mắc cùng tớ hong?</label><br>
+            <input type="text" id="choice" name="choice" required><br>
+            <button type="submit">Xác nhận </button>
+        </form>
+        <div id="result" class="hidden"></div>
+    </div> 
+    <script src="script.js"></script>
+</body>
+</html>

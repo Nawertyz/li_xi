@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bốc lì xì</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('images/bé\ thích\ \(2\).jpg');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100%;
+        }
+
+        .container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.063);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;   
+        }
+
+        .bao-li-xi {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #000000e9;
+        }
+        
+        button {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 50px;
+            height: 100px;
+            border: none;
+            margin: 0 10px;
+            cursor: pointer;
+            margin-bottom: 10px; /* Khoảng cách giữa ảnh và chữ */
+        }
+
+        .hidden-text {
+            display: none;
+        }
+        
+        #bao1 {
+            background-image: url('images/bé\ thích\ \(4\).jpg');
+        }
+
+        #bao2 {
+            background-image: url('images/bé\ thích\ \(8\).jpg');
+        }
+
+        #bao3 {
+            background-image: url('images/bé\ thích\ \(6\).jpg');
+        }
+
+        #bao4 {
+            background-image: url('images/bé\ thích\ \(3\).jpg');
+        }
+
+        #bao5 {
+            background-image: url('images/bé\ thích\ \(7\).jpg');
+        }
+
+        #bao-lixo-chon {
+            margin-top: 20px; /* Khoảng cách giữa nút bao lì xì và phần đã chọn */
+        }
+
+       
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bốc lì xì</h1>
+        <p>Bé hãy một trong 5 bao lì xì dưới đây:</p>
+        <div class="bao-li-xi">
+            <div>
+                <button id="bao1" onclick="chonBaoLixi(1)">
+                    
+                </button>
+                <br>
+                <span class="hidden-text">Bao lì xì 1</span>
+                <span id="menh-gia-1" class="hidden"></span>
+            </div>
+            <div>
+                <button id="bao2" onclick="chonBaoLixi(2)">
+                   
+                </button>
+                <br>
+                <span class="hidden-text">Bao lì xì 2</span>
+                <span id="menh-gia-2" class="hidden"></span>
+            </div>
+            <div>
+                <button id="bao3" onclick="chonBaoLixi(3)">
+                    
+                </button>
+                <br>
+                <span class="hidden-text">Bao lì xì 3</span>
+                <span id="menh-gia-3" class="hidden"></span>
+            </div>
+            <div>
+                <button id="bao4" onclick="chonBaoLixi(4)">
+                   
+                </button>
+                <br>
+                <span class="hidden-text">Bao lì xì 4</span>
+                <span id="menh-gia-4" class="hidden"></span>
+            </div>
+            <div>
+                <button id="bao5" onclick="chonBaoLixi(5)">
+                    
+                </button>
+                <br>
+                <span class="hidden-text">Bao lì xì 5</span>
+                <span id="menh-gia-5" class="hidden"></span>
+            </div>
+        </div>
+        
+        <div id="bao-lixo-chon" class="hidden">
+            <h2>Bao lì xì embe đã chọn là:</h2>
+            <p id="bao-lixo-chon-text"></p>
+            <button onclick="chucTet()"><span class="btn-text">Nhấp vô đi ạ</span></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
